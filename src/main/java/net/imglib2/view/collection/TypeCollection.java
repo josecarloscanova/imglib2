@@ -10,6 +10,10 @@ import net.imglib2.type.Type;
 /**
  * A {@link Collection} wrapper over an {@link IterableInterval}.
  * 
+ * Does not implement a number of methods from {@link Collection} that would
+ * add or remove entries to the underlying {@link IterableInterval}.
+ * Copying all the data into an array is not supported either.
+ * 
  * @author Albert Cardona
  *
  * @param <T>
